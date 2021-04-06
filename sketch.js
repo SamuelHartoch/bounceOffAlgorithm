@@ -16,6 +16,7 @@ function setup() {
 function draw() {
   background(0,0,0);  
 
+  function bounceOff(object1,object2){
   if (movingRect.x - fixedRect.x < fixedRect.width/2 + movingRect.width/2
       && fixedRect.x - movingRect.x < fixedRect.width/2 + movingRect.width/2) {
     movingRect.velocityX = movingRect.velocityX * (-1);
